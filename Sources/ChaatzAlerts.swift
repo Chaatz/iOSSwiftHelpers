@@ -155,7 +155,7 @@ extension UIAlertController {
                 UIAlertController.presentServerUnavailableAlert()
             })
         }
-        if let topMostViewController = findTopMostPresentedViewController() {
+        if let topMostViewController = UIViewController.findTopMostPresentedViewController() {
             UIAlertController.presentFailureAlert(
                 title: nil,
                 message: "You are not connected. Please check out your internet and try again.",
@@ -169,7 +169,7 @@ extension UIAlertController {
                 UIAlertController.presentInternetUnavailableAlert()
             })
         }
-        if let topMostViewController = findTopMostPresentedViewController() {
+        if let topMostViewController = UIViewController.findTopMostPresentedViewController() {
             UIAlertController.presentFailureAlert(
                 title: nil,
                 message: "No internet connection. Please check out your internet and try again.",
@@ -183,7 +183,7 @@ extension UIAlertController {
                 UIAlertController.presentTryAgainAlert()
             })
         }
-        if let topMostViewController = findTopMostPresentedViewController() {
+        if let topMostViewController = UIViewController.findTopMostPresentedViewController() {
             UIAlertController.presentFailureAlert(
                 title: nil,
                 message: "Please try again.",
